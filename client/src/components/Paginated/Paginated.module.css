@@ -1,0 +1,39 @@
+.nav{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 1.5em 0 .5em 0;
+}
+.ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;
+   height: 50%;
+   gap: .5em;
+}
+.buttonPage{
+   --size: 2em;
+   --margin: 6px;
+   margin: 0 var(--margin);
+   border-color: var(--button-paginate-border-color);
+   color: var(--button-paginate-color);
+   border-radius: 6px;
+   background: var(--button-background);
+   max-width: auto;
+   min-width: var(--size);
+   height: var(--size);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   padding: 0 6px;
+}
+.buttonPage:hover {
+   width: 2.5em;
+   height: 2em;
+   color: var(--color-text-red);
+   background-color: whitesmoke;
+   box-shadow: var(--box-shadow);
+   font-weight: bold;
+   }

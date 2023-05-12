@@ -1,0 +1,14 @@
+.containerHome{
+   height: 100%;
+   margin-top: 7em;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.spinnerLoader{
+   display: block;
+   margin-top: 10em;
+}
