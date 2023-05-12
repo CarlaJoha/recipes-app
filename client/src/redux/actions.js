@@ -18,7 +18,7 @@ import {
 export const getAllRecipes = () => {
   return async (dispatch) => {
     try {
-      let response = await axios.get("http://localhost:3001/recipes"); //http://localhost:3001/recipes
+      let response = await axios.get("/recipes"); //http://localhost:3001/recipes
       // console.log(response?.data[0].healthScore);
       return dispatch({ type: GET_ALL_RECIPES, payload: response?.data }); //revisar esto cuando me traiga la el back
     } catch (error) {
@@ -32,7 +32,7 @@ export const getRecipesByName = (name) => {
   return async (dispatch) => {
     try {
       let response = await axios.get(
-        `http://localhost:3001/recipes?name=${name}`
+        `/recipes?name=${name}`
       ); //http://localhost:3001/recipes
       let infoByName = await response.data;
       return dispatch({ type: GET_BY_NAME, payload: infoByName });
@@ -47,7 +47,7 @@ export const getRecipesByName = (name) => {
 export const getRecipesDetail = (id) => {
   return async (dispatch) => {
     try {
-      let response = await axios.get(`http://localhost:3001/recipes/${id}`);
+      let response = await axios.get(`/recipes/${id}`);
       // console.log("Esto es desde las actions", response.data);
       return dispatch({ type: GET_DETAIL, payload: response.data });
     } catch (error) {
@@ -67,7 +67,7 @@ export const postRecipe = (
 ) => {
   return async (dispatch) => {
     try {
-      let infoPost = await axios.post("http://localhost:3001/recipes", {
+      let infoPost = await axios.post("/recipes", {
         name,
         healthScore,
         summary,
@@ -89,7 +89,7 @@ export const postRecipe = (
 export const getAllDiets = () => {
   return async (dispatch) => {
     try {
-      let infoDiets = await axios.get("http://localhost:3001/diets");
+      let infoDiets = await axios.get("/diets");
       // console.log(infoDiets.data)
       return dispatch({ type: GET_ALL_DIETS, payload: infoDiets.data }); //QUITAR .results cuando venga de la Api
     } catch (error) {
