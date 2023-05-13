@@ -20,7 +20,7 @@ const handleClick = (event) => {
 
    return(
       <nav className={style.containerNavBar}>
-         <Link className={style.link} to="/recipes" >HOME</Link>
+         <Link className={style.link} to="/" >HOME</Link>
          <Link className={style.link} to="/form" >CREATE RECIPE</Link>
          <SearchBar ></SearchBar>
          <button className={style.buttonRefresh}            

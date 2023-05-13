@@ -22,7 +22,7 @@ const initialState = {
   allDiets: [],
 
   currentPage: 1,
-  recipesPerPage: 9,
+  recipesPerPage: 8,
 };
 
 const reducer = (state = initialState, action) => {

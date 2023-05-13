@@ -10,15 +10,14 @@ const [ name, setName ] = useState("")
 const currentPage = useSelector((state) => state.currentPage)
 
 const handleInputChange = (event) => {
-   event.preventDefault();
+   // event.preventDefault();
    setName(event.target.value)
    // console.log(name)
 }
 const handleSubmit = (event) => {
    event.preventDefault();
-   dispatch(getRecipesByName(name))
+   dispatch(getRecipesByName(name, currentPage))
    setName("");
-   dispatch(currentPage)  
 }
    return(
       <form className={style.containerSearchBar} onSubmit={(event) => handleSubmit(event)} >
@@ -32,7 +31,7 @@ const handleSubmit = (event) => {
             className={style.inputSearchBar} 
             value={name} 
             placeholder="Search..." 
-            type="search"
+            type="text"
             onChange={(event) => handleInputChange(event)}
             />
       </form>

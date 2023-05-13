@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import validation from "./validation";
 import { Link, useNavigate } from "react-router-dom";
-// import { Form, FormGroup } from "react-bootstrap";
 
 const FormCreate = () => {
   const dispatch = useDispatch();
