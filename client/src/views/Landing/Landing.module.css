@@ -4,6 +4,16 @@
    background-position:0cap;
    position: fixed;
 }
+.containerLogo{
+   width: 100%;
+   z-index: 1;
+   display: flex;
+   padding: 3em 4em;
+   position: fixed;
+}
+.imgLogo{
+   width: 20%;
+}
 .containerImage{
    width: 100%;
    z-index: 0;

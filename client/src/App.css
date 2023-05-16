@@ -8,3 +8,8 @@
   color: var(--text-color);
   font-family: var(--font-family);
 }
+@media (min-width: 600px) {
+  .App {
+    width: 100%;
+  }
+}

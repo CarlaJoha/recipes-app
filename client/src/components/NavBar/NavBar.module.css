@@ -3,6 +3,7 @@
    display: flex;
    padding: 2em;
    flex-direction: row;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
    background-color:#080808c7;
@@ -16,6 +17,15 @@ nav{
    left: 0;
    width: 100%;
    z-index: 2;
+   /* border: 1px solid red;   */
+}
+
+.containerLogo{
+   width: 12em;
+  /* border: 1px solid red;     */
+}
+.imgLogo{
+   width: 100%;
 }
 .buttonRefresh{
    width: 6em;

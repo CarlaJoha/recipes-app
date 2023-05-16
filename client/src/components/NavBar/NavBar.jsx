@@ -4,6 +4,7 @@ import  SearchBar  from '../SearchBar/SearchBar';
 import {  getAllRecipes } from '../../redux/actions';
 import { useDispatch } from 'react-redux';
 import { useEffect} from 'react';
+import logo from "../../assets/logo4.png";
 
 const NavBar = () => {
    const dispatch = useDispatch();
@@ -20,6 +21,9 @@ const handleClick = (event) => {
 
    return(
       <nav className={style.containerNavBar}>
+         <div className={style.containerLogo}>
+            <img src={logo} className={style.imgLogo} alt="logo" />
+         </div>
          <Link className={style.link} to="/" >HOME</Link>
          <Link className={style.link} to="/form" >CREATE RECIPE</Link>
          <SearchBar ></SearchBar>

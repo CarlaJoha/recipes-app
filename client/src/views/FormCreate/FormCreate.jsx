@@ -120,7 +120,7 @@ const FormCreate = () => {
         ></textarea>
         {errors.summary && <p className={style.errors}>{errors.summary}</p>}
 
-        <label className={style.label}>Step by Step:</label>
+        <label className={style.label}>Instructions:</label>
         <textarea
           onChange={handleChange}
           name="instructions"
@@ -130,7 +130,7 @@ const FormCreate = () => {
           autoComplete="off"
         ></textarea>
 
-        <label className={style.label} htmlFor="image">
+        <label className={style.label}>
           Image:
         </label>
          <input
@@ -172,7 +172,7 @@ const FormCreate = () => {
             step={1}
             autoComplete="off"
           />{" "}
-          <output htmFor="healthScore">{input.healthScore}</output>
+          <output>{input.healthScore}</output>
         </label>
         {errors.healthScore && (
           <p className={style.errors}>{errors.healthScore}</p>

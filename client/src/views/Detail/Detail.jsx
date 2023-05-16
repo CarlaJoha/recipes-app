@@ -47,6 +47,7 @@ const Detail = () => {
         summary={detail.summary}
         instructions={detail.instructions}
         />
+       <Link to="/recipes"><button className={style.buttonHome}>HOME</button></Link>
       </>
       }
     </div>
