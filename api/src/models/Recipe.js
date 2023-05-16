@@ -19,12 +19,12 @@ module.exports = (sequelize) => {
 
     image: {
       type: DataTypes.STRING,
-      defaultValue: '../../ratatuille.jpg',
+      defaultValue: 'https://i.ibb.co/xJRF34R/landing.jpg',
       allowNull: true,//NO es obligatoria - EST
     },
 
     summary: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,//SI es obligatorio
     },
 
